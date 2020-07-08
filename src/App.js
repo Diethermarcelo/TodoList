@@ -3,35 +3,35 @@ import Todos from './Todos';
 import AddTodo from './AddTodo';
 
 class App extends Component{
-  state = {    
+  state = {
     todos: [{
       id: 1,
       content: "Maghugas ng pinggan"
     }, {
       id: 2,
       content: "Magpakabatugan"
-    }, {      
+    }, {
       id: 3,
       content: "Kumain"
-    }, {      
+    }, {
       id: 4,
       content: "Matulog"
-    }, {      
+    }, {
       id: 5,
       content: "Maglaba"
-    }, {      
+    }, {
       id: 6,
       content: "Maglaro"
-    }, {      
+    }, {
       id: 7,
       content: "Kumain maghapon"
     }
-    ] 
+    ]
   }
   deleteTodo = (id) => {
     const todos = this.state.todos.filter(todo =>{
       return todo.id != id;
-    });    
+    });
     this.setState({
       todos
     })
@@ -40,7 +40,7 @@ class App extends Component{
     const todos = [...this.state.todos, todo];
     this.setState({
       todos
-    })        
+    })
 
   }
   render(){
