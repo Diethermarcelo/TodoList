@@ -46,7 +46,7 @@ class App extends Component{
   render(){
     return (
       <div className="todo-content container" id="container">
-        <h1 className="center white-text card-panel teal darken-2 z-depth-3" id="header"> Todo List </h1>
+        <h1 className="center white-text card-panel teal darken-2 z-depth-3" id="header"> <span> Todo List </span> </h1>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
         <AddTodo addTodo={this.addTodo}/>
       </div>

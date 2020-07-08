@@ -9,7 +9,7 @@ const Todos = ({todos, deleteTodo}) => {
             </div> 
         })
     ):(
-        <p class="center"> You do not have tasks for today! </p>
+        <p class="center"> Wala kang gawain ngayon, lagi naman </p>
     );
     return( 
         <div className="collection z-depth-3" id="todolist"> 
